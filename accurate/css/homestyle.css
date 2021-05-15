@@ -286,9 +286,52 @@ section.hero {
     margin-top: .2em;
 }
 
+.slide-container {
+    width: 1100px;
+    height: 618px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
 
+.image-container {
+    width: 3300px;
+    height: 618px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s
+}
 
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px; 
+}
 
+.button-container {
+    top: -20px;
+    position: relative;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+#slider-image-2:target ~ .image-container{
+    left: -1100px;
+}
+#slider-image-3:target ~ .image-container{
+    left: -2200px;
+}
 
 section.features-section {
     background: var(--primary-color);
@@ -348,6 +391,11 @@ label {
     font-size: 1.2em;
     margin-bottom: .5em;
 }
+
+.contact-section {
+    background-color: var(--primary-color);
+    
+}
   
 input, textarea {
     width: 100%;
@@ -360,8 +408,8 @@ input, textarea {
 }
   
 input[type="submit"] {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.3em;
     border: none;
@@ -479,10 +527,23 @@ nav li a:hover {
     .testimonials-section ul li {
       margin: 0 1em;
     }
+    .about-section .container{
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .policies-section .container{
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+    }
     .contact-section {
       position: relative;
     }
     .contact-section .container {
+      width: 83%;
+      margin: 0 auto;
+      display: flex;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
