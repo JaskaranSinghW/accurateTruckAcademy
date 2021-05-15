@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 section {
-    padding: 3em 2em;
+    padding: 1em 1.5em;
 }
 
 section.hero {
@@ -259,7 +259,7 @@ nav a:hover {
 }
 
 section {
-    padding: 3em 2em;
+    padding: 1em 1.5em;
 }
 
 section.hero {
@@ -287,6 +287,7 @@ section.hero {
 }
 
 .slide-container {
+    
     width: 1100px;
     height: 618px;
     margin-left: auto;
@@ -530,7 +531,11 @@ nav li a:hover {
     .about-section .container{
         width: 83%;
         margin: 0 auto;
-        display: flex;
+        
+    }
+    p {
+        word-spacing: 5px;
+        line-height: 1.8;
     }
     .policies-section .container{
         width: 83%;
